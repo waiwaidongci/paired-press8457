@@ -4,7 +4,7 @@ from redis import Redis
 from sqlalchemy import select
 from src.config.database import Session
 from src.models.run import Run
-from src.models import user,study,observation,review,audit
+from src.models import user,study,observation,review,audit,replay
 from src.services.algorithm import calculate
 from src.utils.serializers import checksum
 redis=Redis.from_url(os.environ['REDIS_URL'])
